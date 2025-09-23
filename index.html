@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Summary Component</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Left Side */
+    .result {
+      flex: 1;
+      background: linear-gradient(to bottom, #4e00c2, #7a3ff2);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px ;
+    }
+
+    .result h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto 20px;
+    }
+
+    .circle h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .circle p {
+      margin: 0;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    .result h3 {
+      margin: 10px 0;
+    }
+
+    .result p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Right Side */
+    .summary {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .summary h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .reaction { background: #ffecec; color: #d62828; }
+    .memory { background: #fff7e6; color: #f77f00; }
+    .verbal { background: #e6f9f5; color: #00875a; }
+    .visual { background: #e6ecff; color: #3a0ca3; }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      background: #303b5a;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #043bb2;
+    }
+    img{
+      width: 18px;
+      margin-right: 12px;
+    }
+    .sec1{
+      display: flex;
+      align-items: center;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Side -->
+    <div class="result">
+      <h2>Your Result</h2>
+      <div class="circle">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="summary">
+      <h2>Summary</h2>
+      <div class="item reaction">
+        <div class="sec1">
+          <img src="./assets/images/icon-reaction.svg">
+          <span>Reaction</span>
+        </div> 
+        <div> 
+          <span style="font-weight: 600;">80 </span>/ 100
+        </div>
+      </div>
+
+      <div class="item memory">
+        <div class="sec1">
+          <img src="./assets/images/icon-memory.svg">
+          <span>Memory</span>
+        </div>
+        <div>
+          <span style="font-weight: 600;">92 </span>/ 100
+        </div>
+      </div>
+
+      <div class="item verbal">
+        <div class="sec1">
+          <img src="./assets/images/icon-verbal.svg">
+          <span>Verbal</span>
+        </div>
+        <div>
+          <span style="font-weight: 600;">61 </span>/ 100
+        </span>
+        </div>
+      </div>
+
+      <div class="item visual">
+        <div class="sec1">
+          <img src="./assets/images/icon-visual.svg">
+          <span>Visual</span>
+        </div>
+        <div>
+          <span style="font-weight: 600;">72 </span>/ 100
+        </div>
+      </div>
+      <button>Continue</button>
+    </div>
+  </div>
+
+</body>
+</html>
